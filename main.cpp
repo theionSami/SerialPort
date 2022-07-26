@@ -5,7 +5,7 @@
 
 using namespace std;
 
-char* portName = "\\\\.\\COM20";
+const char* portName = "\\\\.\\COM8";
 
 #define MAX_DATA_LENGTH 255
 
@@ -23,7 +23,7 @@ SerialPort *arduino;
 const unsigned int BLINKING_DELAY = 1000;
 
 //If you want to send data then define "SEND" else comment it out
-#define SEND
+//#define SEND
 
 void exampleReceiveData(void)
 {
